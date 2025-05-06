@@ -14,7 +14,7 @@ services:
 
   memcached:
     image: memcached:latest
-    container_name: mc01  # Altere para "mc01" conforme o application.properties
+    container_name: mc01
     restart: always
     command: memcached -m 64 -p 11211 -u root -l 0.0.0.0
     ports:
@@ -22,7 +22,7 @@ services:
 
   rabbitmq:
     image: rabbitmq:latest
-    container_name: rmq01  # Altere para "rmq01" conforme o application.properties
+    container_name: rmq01
     restart: always
     ports:
       - "5672:5672"
