@@ -51,9 +51,4 @@ docker exec -it db01 mysql -u root -p
 ## Notes
 
 - This setup assumes a local development environment.
-- Make sure to adjust the database, caching, and message queue configurations in `application.properties` as needed.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
