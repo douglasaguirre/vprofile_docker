@@ -41,7 +41,7 @@ services:
       context: ./app
     container_name: vprofile-web
     ports:
-      - "8080:8080"
+      - "8080" #no host port is listen, you have to access the tomcat frontend via the nginx
     depends_on:
       - mysql
       - memcached
